@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox </title>
+    <style>
+        .container{
+            border: 2px solid salmon;
+            display: flex;
+            justify-content: center;
+            height: 200px;
+        }
+        .box{
+            border: 2px dashed tomato;
+            width: 50px;
+            height: 50px;
+        }
+        .images{
+            display: flex;
+            justify-content: space-around;
+            /* align-items: center; */
+            align-items: center;
+            background-color: antiquewhite;
+            height: 70vh;
+            /* width: 100vw; */
+        }
+        .images .img{
+        
+            width: 300px;
+            margin-top: 25vh;
+            height: 45vh;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Layout</h1>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+        
+    </div>
+    <div class="images">
+        <h1>THIS IS A PRaCtice task</h1>
+        <img class="img" src="./side-view-hand-pouring-coffee-cup.jpg" alt="">
+   </div>
+   <div>
+    <h1>jkhkasduyuyhv</h1>
+   </div>
+</body>
+</html>
