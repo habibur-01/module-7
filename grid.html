@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+        .container{
+            display: grid;
+            /* grid-template-columns: repeat(3, 1fr);
+             */
+             /* grid-template-areas: 
+             "nav nav nav"
+             "sidebar main main"
+             "sidebar main main"
+             "sidebar footer footer"; */
+             grid-template-columns: repeat(3,1fr);
+            background-color: aquamarine;
+            gap: 10px;
+            text-align: center;
+        }
+        .container>div{
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        .nav{
+            /* display: flex; */
+            /* grid-area: nav; */
+            /* justify-content: center;
+            align-items: center; */
+            grid-column: span 3;
+            text-align: center;
+            padding: 20px 20px;
+            background-color: antiquewhite;
+        }
+        .sidebar{
+            /* grid-area: sidebar; */
+            background-color: aliceblue;
+            grid-row: span 2;
+        }
+        .main{
+            /* grid-area: main; */
+            background-color: bisque;
+            height: 200px;
+            grid-row: span 2;
+            grid-column: span 2;
+        }
+        .footer{
+            /* grid-area: footer; */
+            background-color: blue;
+            padding: 20px 20px;
+            grid-column: span 3;
+        }
+    </style>
+    </head>
+    <body class="container">
+        <div class="nav">navbar</div>
+        <div class="sidebar">sidebar</div>
+        <div class="main">main body</div>
+        <div class="footer">footer</div>
+    </body>
+</html>
